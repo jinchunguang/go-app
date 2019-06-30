@@ -7,7 +7,7 @@ import (
 
 
 func DefaultPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w,"<h1>这是我的第一个网站</h1>")
+	io.WriteString(w,"<h1>hello , golang</h1>")
 }
 
 // GOOS=linux GOARCH=amd64 go build -o web-server main.go
