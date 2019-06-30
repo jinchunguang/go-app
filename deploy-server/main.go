@@ -28,6 +28,8 @@ func Ping(w http.ResponseWriter, r *http.Request) {
 }
 
 
+
+// GOOS=linux GOARCH=amd64 go build -o deploy-server main.go
 func main() {
 	http.HandleFunc("/", Ping)
 	http.HandleFunc("/run", Run)

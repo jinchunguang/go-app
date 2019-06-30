@@ -7,10 +7,10 @@ import (
 
 
 func DefaultPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w,"<h1>Hello World </h1>")
+	io.WriteString(w,"<h1>这是我的第一个网站</h1>")
 }
 
-// GOOS=linux GOARCH=amd64 go build -o deploy-web main.go
+// GOOS=linux GOARCH=amd64 go build -o web-server main.go
 
 func main() {
 	http.HandleFunc("/", DefaultPage)

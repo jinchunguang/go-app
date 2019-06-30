@@ -13,5 +13,5 @@ git pull https://github.com/jinchunguang/web-app.git
 cd web-server
 
 #
-./deploy-web &
+./web-server &
 
